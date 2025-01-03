@@ -2,12 +2,13 @@
 In computer chess, a chess engine is a computer program that analyzes chess or chess variant positions, and generates a move or list of moves that it regards as strongest.
 
 how do chess engines work?
+
 By using algorithms and heuristics to make decisions about the best move in a certain position/situation
 Usually a back end with a command-line interface with no graphics
 Used with a front-end/GUI
 
 
-Tech and approach
+Tech and approach:---
 We have used JavaScript and min-max algorithm  and alpha-beta pruning to create this engine.
 
 
