@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+#container{
+font-family:"Century Gothic", Arial,sans-serif;
+/* background-color: rgb(245, 247, 244);
+ */
+/* margin: 30px; */
+background-image:url("images/ll.jpeg");
+padding:30px;
+}
+
+#FenInDiv {
+  position: relative;
+  left: 60px;
+}
+
+#fenIn {
+  width: 480px;
+  left: 60px;
+}
+
+#versionLink {
+  margin-left: 10px;
+  font-size: small;
+}
+
+#LoadingBook {
+  position: absolute;
+  left: 600px;
+  top: 150px;
+}
+
+#CurrentFenDiv {
+  position: relative;
+  left: 60px;
+  margin-top: 40px;
+}
+
+#Board {
+  position: relative;
+  left: 60px;
+  top: 20px;
+  width: 480px;
+  height: 480px;
+  border-style: solid;
+  border-width: 2px;
+}
+
+#EngineOutput {
+  position: absolute;
+  left: 650px;
+  top: 200px;
+  font-size: 20px;
+}
+
+#ThinkingImageDiv {
+  position: absolute;
+  top: 140px;
+  left: 600px;
+}
+
+#ThinkingPng {
+  width: 50px;
+  height: 30px;
+}
+
+.Piece {
+  position: absolute;
+}
+
+.Square {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+}
+
+.Light {
+  background-color: #4f5355;
+}
+
+.Dark {
+  background-color: #c0b9b2;
+}
+
+.SqSelected {
+  background-color: #9e9e9e;
+}
+
+.clickElement {
+  cursor: pointer;
+}
+
+.rank1 {
+  top: 420px;
+}
+.rank2 {
+  top: 360px;
+}
+.rank3 {
+  top: 300px;
+}
+.rank4 {
+  top: 240px;
+}
+.rank5 {
+  top: 180px;
+}
+.rank6 {
+  top: 120px;
+}
+.rank7 {
+  top: 60px;
+}
+.rank8 {
+  top: 0px;
+}
+
+.file1 {
+  left: 0px;
+}
+.file2 {
+  left: 60px;
+}
+.file3 {
+  left: 120px;
+}
+.file4 {
+  left: 180px;
+}
+.file5 {
+  left: 240px;
+}
+.file6 {
+  left: 300px;
+}
+.file7 {
+  left: 360px;
+}
+.file8 {
+  left: 420px;
+}
+
+.rank8flip {
+  top: 420px;
+}
+.rank7flip {
+  top: 360px;
+}
+.rank6flip {
+  top: 300px;
+}
+.rank5flip {
+  top: 240px;
+}
+.rank4flip {
+  top: 180px;
+}
+.rank3flip {
+  top: 120px;
+}
+.rank2flip {
+  top: 60px;
+}
+.rank1flip {
+  top: 0px;
+}
+
+.file8flip {
+  left: 0px;
+}
+.file7flip {
+  left: 60px;
+}
+.file6flip {
+  left: 120px;
+}
+.file5flip {
+  left: 180px;
+}
+.file4flip {
+  left: 240px;
+}
+.file3flip {
+  left: 300px;
+}
+.file2flip {
+  left: 360px;
+}
+.file1flip {
+  left: 420px;
+}
+
+input,button{
+  font-family:"Century Gothic", Arial,sans-serif;
+  /* border-color: none; */
+    background-color:#595c5e;
+
+    color:white;
+    /* display:block; */
+    margin:auto;
+    height:50px;
+    font-size:13px;
+    
+  }
+
+  
+  .welcome-popup{
+    font-family:"Century Gothic", Arial,sans-serif;
+    font-size:1.35rem;
+    text-align: center;
+    position:fixed;
+    left:0;
+    top:0;
+    display: flex;
+     justify-content: center;
+    width:100%;
+    height:100%;
+    z-index:100;
+    background-color:rgba(0,0,0,0.6);
+    align-items:center;
+    visibility:hidden;
+    opacity:0;
+    transition: all 1s ease;
+  }
+  
+  .welcome-popup.show{
+    visibility:visible;
+    opacity:1;
+  }
+  
+  .welcome-popup .box{
+    z-index:1;
+    background-color:#423f3f;
+    /* background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FBobby-Fischer&psig=AOvVaw3WKtrk8_PgRm3H2Xn-NjPi&ust=1683103516287000&source=images&cd=vfe&ved=0CA4QjRxqFwoTCLidyayf1v4CFQAAAAAdAAAAABAE"); */
+    width:29rem;
+    position:absolute;
+    transform:translateX(-50%,-50%);
+    display:flex;
+    flex-wrap:50%;
+    color:rgb(255, 255, 255);
+    border:0.37rem double black;
+    border-radius:0.25rem;
+    height:22rem;
+  }
+  
+  .welcome-popup .close1{
+    color:black;
+    position:absolute;
+    right:0.625rem;
+    top:0.3125rem;
+    font-size:1.875rem;
+    cursor:pointer;
+  }
+  
+  .welcome-popup .welcome{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:90%;
+    position:absolute;
+    bottom:0;
+    margin:auto;
+    align-items:center;
+    
+  }
+  
+  .welcome-popup .span3{
+    font-weight:normal;
+    font-size:1.7rem;
+    display:block;
+    text-align:center;
+    font-family:"Poppins",sans-serif;
+  }	
+  
